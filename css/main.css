@@ -1,0 +1,102 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.artist-image{
+    border-radius: 50%;
+
+}
+header{
+    background-color: crimson;
+    padding: 20px;
+
+}
+.header-list{
+    display: flex;
+    width: 30%;
+    margin:0 auto;
+   
+}
+.header-list li{
+    list-style: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;    
+}
+.header-list li:hover{
+    transform: scale(1.4);
+    transition: 1.5s;
+}
+.background{
+   background-attachment: fixed;
+   background-image: url("../img/background.jpg");
+   height: 77vh;
+}
+.designer-buttons{
+    margin: 0 auto;
+    padding-left:40%;
+    padding-top:20%;
+}
+.designer-buttons ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 10px;
+ 
+}
+.listen-btn{
+padding-left: 30px;
+padding-top: 10px;
+padding-bottom: 14px;
+padding-right: 14px;
+border:2px solid crimson;
+opacity:0.8;
+border-radius: 4px;
+font-size: 20px;
+background-image: url("../img/microphone.png");
+background-repeat: no-repeat;
+-webkit-animation: pulse 1.4s infinite;
+-webkit-backface-visibility: hidden;
+
+
+}
+@keyframes pulse{
+    0% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+      70% {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+      }
+      100% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+      }
+}
+.listen-btn:hover{
+    background-color: crimson;
+    color:white;
+    background-image: url("../img/white-mic.png");
+}
+.album-btn{
+    padding: 14px;
+    border:2px solid crimson;
+    opacity:0.8;
+    border-radius: 4px;
+    font-size: 20px;
+}
+audio{
+    width: 100%;
+   
+}
